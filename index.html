@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hieu Tran | GIS & Data Portfolio</title>
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body { scroll-behavior: smooth; }
+    .hero {
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(120, 94, 240, 0.15), transparent),
+                  radial-gradient(1200px 600px at 90% 20%, rgba(255, 196, 37, 0.18), transparent);
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 999px;
+      border: 3px solid rgba(0,0,0,0.08);
+    }
+    .card { border-radius: 1rem; }
+    .section-title { letter-spacing: .02em; }
+    .tag {
+      display:inline-block;
+      padding: .2rem .55rem;
+      border-radius: 999px;
+      background: rgba(0,0,0,.06);
+      font-size: .85rem;
+      margin-right: .35rem;
+      margin-bottom: .35rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#top">Hieu Tran</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <h1 class="display-5 fw-bold mb-2">GIS & Data Science Portfolio</h1>
+          <p class="lead mb-3">
+            I’m a UW Geography (Data Science track) senior who builds practical mapping + analysis workflows
+            with ArcGIS Pro/QGIS, Python, and visualization dashboards.
+          </p>
+
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-dark btn-lg" href="/resume">View Resume</a>
+            <a class="btn btn-outline-dark btn-lg" href="#projects">See Projects</a>
+            <a class="btn btn-outline-secondary btn-lg" href="https://github.com/hieut01" target="_blank" rel="noopener">GitHub</a>
+          </div>
+
+          <div class="mt-3 text-muted">
+            Shoreline, WA · <a href="mailto:hieut01@uw.edu">hieut01@uw.edu</a>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <!-- Put man.png in the repo root -->
+          <img class="avatar" src="man.png" alt="Headshot of Hieu Tran">
+          <div class="mt-3 small text-muted">Interested in airports, infrastructure, and resilient urban design.</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="h3 fw-bold section-title mb-3">About</h2>
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <p class="mb-2">
+            I like projects where data becomes something you can actually use: maps, dashboards, and clear,
+            reproducible workflows. I’m comfortable working across GIS tools (ArcGIS Pro, QGIS) and coding
+            (Python, SQL) to clean data, run analysis, and communicate results.
+          </p>
+          <p class="mb-0">
+            My current interests are airport operations, transportation systems, and resilient infrastructure planning.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <div class="p-4 bg-light rounded-4">
+            <div class="fw-semibold mb-2">Quick facts</div>
+            <ul class="mb-0">
+              <li>UW Seattle — Geography (Data Science)</li>
+              <li>Minor: Statistics</li>
+              <li>Expected graduation: March 2026</li>
+              <li>GPA: 3.5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3">
+        <h2 class="h3 fw-bold section-title m-0">Projects</h2>
+        <div class="text-muted">A few things I’ve built (and how I built them).</div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 fw-semibold">Visualizing Seattle (FAA flight records)</h3>
+              <p class="mb-2">
+                Built a Pandas pipeline to standardize and geo-tag ~30,000 flight records, then visualized key corridors.
+              </p>
+              <div class="mb-3">
+                <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Tableau</span><span class="tag">Vega-Lite</span>
+              </div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a class="btn btn-sm btn-outline-dark disabled" href="#">Add link later</a>
+                <a class="btn btn-sm btn-outline-secondary" href="/resume">Details on resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 fw-semibold">Natural Disaster Dashboard (FEMA records)</h3>
+              <p class="mb-2">
+                Summarized 20 years of hazard records and created filters for hazard type + time to support analysis.
+              </p>
+              <div class="mb-3">
+                <span class="tag">Dashboards</span><span class="tag">Data cleaning</span><span class="tag">Visualization</span>
+              </div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a class="btn btn-sm btn-outline-dark disabled" href="#">Add link later</a>
+                <a class="btn btn-sm btn-outline-secondary" href="/resume">Details on resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 fw-semibold">Field Observational Study (park design)</h3>
+              <p class="mb-2">
+                On-site research + R-based clustering to evaluate safety and engagement patterns in park design.
+              </p>
+              <div class="mb-3">
+                <span class="tag">R</span><span class="tag">Clustering</span><span class="tag">Spatial analysis</span>
+              </div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a class="btn btn-sm btn-outline-dark disabled" href="#">Add link later</a>
+                <a class="btn btn-sm btn-outline-secondary" href="/resume">Details on resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 fw-semibold">Suitability Mapping (logistic regression)</h3>
+              <p class="mb-2">
+                Reusable Python scripts to speed up GIS prep, then modeled site suitability and mapped priority tracts.
+              </p>
+              <div class="mb-3">
+                <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">QGIS</span>
+              </div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a class="btn btn-sm btn-outline-dark disabled" href="#">Add link later</a>
+                <a class="btn btn-sm btn-outline-secondary" href="/resume">Details on resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-4 p-4 bg-white rounded-4 border">
+        <div class="fw-semibold mb-1">Optional upgrade (not required)</div>
+        <div class="text-muted">
+          Replace the “Add link later” buttons with real links (GitHub repos, PDFs, Tableau Public, screenshots).
+          Even one working project link makes it look much stronger.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="h3 fw-bold section-title mb-3">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-light rounded-4 h-100">
+            <div class="fw-semibold mb-2">GIS & Visualization</div>
+            <ul class="mb-0">
+              <li>ArcGIS Pro, QGIS</li>
+              <li>GeoPandas</li>
+              <li>Vega-Lite, Tableau, Observable</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-light rounded-4 h-100">
+            <div class="fw-semibold mb-2">Programming</div>
+            <ul class="mb-0">
+              <li>Python (Pandas, scikit-learn, Jupyter)</li>
+              <li>R, Java</li>
+              <li>HTML/CSS/JS</li>
+              <li>SQL (basic)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-light rounded-4 h-100">
+            <div class="fw-semibold mb-2">Tools & Interests</div>
+            <ul class="mb-0">
+              <li>Git/GitHub, Google Colab</li>
+              <li>Excel/CSV wrangling</li>
+              <li>Airports, infrastructure, resilience</li>
+              <li>English + Vietnamese</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="h3 fw-bold section-title mb-3">Contact</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <p class="mb-2">
+            Want to connect? Email is best. I’m happy to share project files, maps, and dashboards.
+          </p>
+          <p class="mb-0">
+            Email: <a href="mailto:hieut01@uw.edu">hieut01@uw.edu</a> ·
+            GitHub: <a href="https://github.com/hieut01" target="_blank" rel="noopener">github.com/hieut01</a>
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a class="btn btn-dark btn-lg" href="/resume">Open Resume Page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 border-top">
+    <div class="container small text-muted d-flex justify-content-between flex-wrap gap-2">
+      <div>© <span id="year"></span> Hieu Tran</div>
+      <div><a href="#top" class="text-muted">Back to top</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
