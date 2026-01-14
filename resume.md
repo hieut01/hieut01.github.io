@@ -1,8 +1,8 @@
 <div align="center">
+  <h1>Hieu Tran</h1>
+</div>
 
-
-
-# Hieu Tran
+<div align="center">
 
 Shoreline, WA  
 Phone: (206) 751-3135  
