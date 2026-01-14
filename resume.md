@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="man.png" alt="Headshot" width="220" style="display:block; margin: 0 auto 12px auto;" />
+
 
 # Hieu Tran
 
@@ -8,6 +8,8 @@ Shoreline, WA
 Phone: (206) 751-3135  
 Email: <a href="mailto:hieut01@uw.edu">hieut01@uw.edu</a>  
 Links: <a href="https://github.com/hieut01">GitHub</a> • <a href="https://www.linkedin.com/">LinkedIn</a> • <a href="https://example.com">Portfolio</a>
+
+<img src="man.png" alt="Headshot" width="220"/>
 
 </div>
 
